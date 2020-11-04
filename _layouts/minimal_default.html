@@ -10,20 +10,17 @@
   <body>
     <div class="wrapper">
       <header>
-        
+        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
         {% if site.logo %}
           <img src="{{site.logo | relative_url}}" alt="Logo" />
         {% endif %}
 	<p>Navigation:</p>
-	    <nav>
 	    <ul>
 		    <li><a href="/">Home</a></li>
 		    <li><a href="/bio">Bio</a></li>
 		    <li><a href="/research">Research</a></li>
 		    <li><a href="/pdfs/CV_academic.pdf" target="_blank">CV</a></li>
-	    </ul>
-	    </nav>
-	      
+	    </ul>	      
       </header>
 
       <section>
